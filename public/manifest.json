@@ -1,0 +1,27 @@
+{
+  "short_name": "chrome-dev-jwt",
+  "name": "Chrome Extension for editing dev JWTs and encoding as a browser cookie",
+  "manifest_version": 2,
+  "icons": {
+    "16": "images/icon-16.png",
+    "128": "images/icon-128.png"
+  },
+  "permissions": [
+    "clipboardWrite",
+    "cookies",
+    "*://localhost/",
+    "*://*.yourdomain.com/",
+    "*://*.dev/",
+    "*://*.local/",
+    "debugger"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "19": "images/icon-19.png",
+      "38": "images/icon-38.png"
+    },
+    "default_popup": "index.html",
+    "default_title": "Dev JWT"
+  },
+  "version": "1.0"
+}
