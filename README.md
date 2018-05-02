@@ -8,6 +8,9 @@ Chrome Extension that allows you to:
 1. Encode as a JWT
 1. Save the JWT as a cookie on the domain of your choice
 
+![Extension Screenshot](https://raw.githubusercontent.com/bennydtown/chrome-dev-jwt/master/public/images/extension-screenshot.png)
+
+
 ### To make this useful..
 
 1. Include your development domain (i.e. `www.myapp.local`) in these files:
