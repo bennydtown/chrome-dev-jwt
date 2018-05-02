@@ -10,6 +10,19 @@ exports[`renders without crashing and no unexpected changes 1`] = `
     <div
       style={
         Object {
+          "float": "right",
+          "fontSize": "1.2em",
+          "margin": "15px",
+          "textAlign": "right",
+          "width": "200px",
+        }
+      }
+    >
+      Create an unsigned JWT for development
+    </div>
+    <div
+      style={
+        Object {
           "height": "80px",
           "width": "80px",
         }
@@ -21,9 +34,6 @@ exports[`renders without crashing and no unexpected changes 1`] = `
         viewBox="10 10 80 80"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <title>
-          Dev JWT
-        </title>
         <path
           className="vt-logomark vt-logo__mark--left"
           d="M59.8,29.1L44.9,44c-1.3-0.5-2.6-0.7-4-0.7c-6.5,0-11.8,5.3-11.8,11.8s5.3,11.8,11.8,11.8
@@ -40,20 +50,8 @@ exports[`renders without crashing and no unexpected changes 1`] = `
         />
       </svg>
     </div>
-    <h1
-      className="App-title"
-      style={
-        Object {
-          "float": "right",
-          "fontSize": "28px",
-        }
-      }
-    >
-      Dev JWT
-    </h1>
   </header>
   <div>
-    Create an unsigned JWT for development.
     <div>
       <form
         onSubmit={[Function]}
