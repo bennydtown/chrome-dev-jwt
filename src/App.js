@@ -16,11 +16,15 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
+          <div style={{
+            float: 'right', textAlign: 'right', width: '200px', margin: '15px', fontSize: '1.2em'
+          }}>
+            Create an unsigned JWT for development
+          </div>
           <div style={{ width: '80px', height: '80px' }}>
             <svg className="logo-img logo-react"
             viewBox="10 10 80 80"
             role="img" xmlns="http://www.w3.org/2000/svg">
-              <title>Dev JWT</title>
               <path
                 className="vt-logomark vt-logo__mark--left"
                 fill="white"
@@ -33,10 +37,8 @@ class App extends Component {
               />
             </svg>
           </div>
-          <h1 style={{ float: 'right', fontSize: '28px' }} className="App-title">Dev JWT</h1>
         </header>
         <div>
-          Create an unsigned JWT for development.
           <Form />
         </div>
       </div>
