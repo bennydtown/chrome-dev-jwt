@@ -26,8 +26,7 @@ class Form extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleInputChange(event) {
-    const target = event.target;
+  handleInputChange = ({target}) => {
     const value = target.value;
     const name = target.name;
 
@@ -37,8 +36,8 @@ class Form extends Component {
     });
   }
 
-  handleSubmit(event) {
-    const { jwt, decoded } = makeToken(this.state);///`token... UserID: ${this.state.userId}\n Roles: ${this.state.roles}`;
+  handleSubmit = event => {
+    const { jwt, decoded } = makeToken(this.state);
     this.setState({ jwt, decoded });
     this.setCookie(jwt);
     event.preventDefault();
@@ -55,7 +54,6 @@ class Form extends Component {
       domain: this.state.domain,
       path: '/',
     };
-    console.log('Setting cookie: ', details);
     try {
       window.chrome.cookies.set(details);
     } catch (ex) {
@@ -64,10 +62,7 @@ class Form extends Component {
   };
 
   renderDomains() {
-    const options = [];
-    for(let d=0; d < domains.length; d++) {
-      options.push(<option value={domains[d]} key={d}>{domains[d]}</option>);
-    }
+    const options = domains.map((domain, d) => <option value={domain} key={d}>{domain}</option>);
     return <select
       style={{marginLeft: '10px', width: '287px' }}
       name="domain" onChange={this.handleInputChange}
