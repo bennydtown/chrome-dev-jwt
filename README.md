@@ -1,8 +1,20 @@
-## chrome-dev-jwt
+# chrome-dev-jwt
 
-Chrome Extension for creating a JWT and saving it as a cookie.  To make this useful, you'll want to include your development domain (i.e. `www.myapp.local`) in these files:
-* The `permissions` collection in *public/manifest.json*
-* The `domains` const at the top of *src/form.js*
+## Overview
+
+Chrome Extension that allows you to:
+
+1. Create a custom claims JSON object
+1. Encode as a JWT
+1. Save the JWT as a cookie on the domain of your choice
+
+### To make this useful..
+
+1. Include your development domain (i.e. `www.myapp.local`) in these files:
+  * The `permissions` collection in *public/manifest.json*
+  * The `domains` const at the top of *src/form.js*
+
+1. Edit the form or validation to enforce the specific
 
 
 ## Getting Started
